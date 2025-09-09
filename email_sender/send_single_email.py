@@ -5,8 +5,8 @@ import socket
 socket.getaddrinfo('localhost', 8080)
 
 #sender details
-SENDER_EMAIL = "ponigetiprasanna2003@gmail.com"
-SENDER_PASSWORD ="qvon wzaw hfzo suws"
+SENDER_EMAIL = "please select your email"
+SENDER_PASSWORD ="enter passcode"
 #configurations
 SMTP_SERVER ='smtp.gmail.com'
 SMTP_PORT = 587
@@ -29,4 +29,5 @@ def single_sender(to_email: str, subject: str, body:str = None):
         server.quit()  #close server
         print(f"email send successfully to {to_email}")
     except Exception as e:
+
         print(f"Failed to send email to {to_email}. Error: {e}")
